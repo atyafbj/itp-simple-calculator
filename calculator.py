@@ -1,26 +1,22 @@
-def add(x, y):
-    return x + y
+import math
 
+def add(a, b):
+    return a + b
 
-def subtract(x, y):
-    pass
+def subtract(a, b):
+    return a - b
 
+def multiply(a, b):
+    return a * b
 
-def divide(x, y):
-    pass
+def divide(a, b):
+    return "Invalid value for denominator, can't divide by 0!" if b == 0 else a / b
 
+def square(a):
+    return a ** 2
 
-def multiply(x, y):
-    pass
+def power(a, b):
+    return a ** b
 
-
-def square(x):
-    pass
-
-
-def power(x, y):
-    pass
-
-
-def sqrt(x):
-    pass
+def sqrt(a):
+    return "Cannot take the square root of a negative number!" if a < 0 else math.sqrt(a)
